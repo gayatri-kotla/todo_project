@@ -1,0 +1,23 @@
+<div class="outer">
+  <div class="containerWrapper">
+    <div class="container">
+      <h2>Todo-List</h2>
+      <form (ngSubmit)="handleSubmit()">
+        <div class="formInsideContainer">
+          <div class="input">
+            <input
+              type="text"
+              name="task"
+              required="true"
+              [(ngModel)]="model.task"
+              placeholder="add your task"
+            /><br />
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <app-table (editUser)="handleEdit($event)"></app-table>
+      <a href="">Go back to home page</a>
+    </div>
+  </div>
+</div>

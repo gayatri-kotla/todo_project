@@ -1,0 +1,27 @@
+<form (ngSubmit)="handleSubmit()">
+    <label>
+      UserName:<input type="text" placeholder="Enter your name" [(ngModel)]="model.name" name="name"/>
+    </label>
+    <label>
+      Task:
+      <input type="text"  placeholder="Enter your task" [(ngModel)]="model.task" name="task"/>
+    </label>
+    <input type="submit" value="submit"/>
+  </form>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>UserName</th>
+        <th>Task</th>
+        <th>Select</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.task}}</td>
+        <td><input type="checkbox"/></td>
+      </tr>
+    </tbody>
+  </table>

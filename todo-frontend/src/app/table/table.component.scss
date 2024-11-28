@@ -1,0 +1,27 @@
+.tableContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // height: 50vh;
+    // gap: 5px;
+}
+
+table{
+    // border-collapse: collapse;
+    
+}
+td,th{
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
+   
+}
+
+.btns{
+    padding: 2px 6px;
+    border-radius: 8px;
+    border: none;
+}

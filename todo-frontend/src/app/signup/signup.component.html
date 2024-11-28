@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <div class="formContainer">
+    <h1>Signup</h1>
+    <form (ngSubmit)="handleSubmit()" #form="ngForm">
+      <div class="formLabelsAndInputsContainer">
+        <div class="formLabelsAndInputs">
+          <label>UserName: </label>
+          <input
+            type="text"
+            placeholder="enter your name"
+            name="userName"
+            [(ngModel)]="login.userName"
+            required="true"
+          />
+        </div>
+        <br />
+        <div class="formLabelsAndInputs">
+          <label> Password: </label>
+          <input
+            type="password"
+            placeholder="enter your password"
+            name="passWord"
+            [(ngModel)]="login.passWord"
+            required="true"
+          />
+        </div>
+        <button type="submit" [disabled]="!form.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

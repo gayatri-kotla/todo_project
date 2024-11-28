@@ -1,0 +1,13 @@
+<div class="tableContainer">
+  <table>
+    <tbody>
+      <tr *ngFor="let user of userData">
+        <td>
+          {{ user.task }}
+          <button class="btns" (click)="handleEdit(user)">Edit</button>
+          <button class="btns" (click)="handleDelete(user)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
